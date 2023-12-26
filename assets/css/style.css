@@ -1,0 +1,491 @@
+html,
+body,
+#banner {
+	margin: 0;
+	transition: all 0.5s;
+}
+
+:root {
+	--main-color: #21bddd;
+	--bg-light: whitesmoke;
+	--font-color: #fff;
+}
+
+html,
+body {
+	overflow-x: hidden !important;
+	width: 100% !important;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 600;
+	font-family: 'Palanquin Dark', sans-serif;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 600;
+	color: var(--main-color);
+}
+
+h3 {
+	font-size: 26px;
+	font-weight: 800;
+}
+
+p {
+	color: #555555;
+}
+
+.page_home_banner  img
+{
+	height: 700px!important;
+}
+
+.section {
+	padding: 80px 0;
+}
+
+a.common_btn {
+	text-decoration: none;
+	padding: 8px 24px;
+	color: var(--font-color);
+	background: var(--main-color);
+	border: 1px solid transparent;
+	transition: all 0.5s;
+	border-radius: 5px;
+}
+
+a.common_btn:hover {
+	border: 1px solid var(--main-color);
+	color: var(--bg-dark);
+	background: var(--font-color);
+}
+
+
+.container {
+	width: 100%;
+	max-width: 1440px !important;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* /header/ */
+
+
+.nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.nav>.nav-header {
+	flex: 0.95;
+	padding-left: 1rem;
+}
+
+.nav>.nav-header>.nav-title {
+	font-size: 22px;
+}
+
+.nav>.nav-list {
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 0;
+}
+
+.nav>.nav-list>li {
+	list-style-type: none;
+}
+
+.nav>.nav-list>li a {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 500;
+	color: var(--font-color);
+	transition: all 0.5s;
+}
+
+.active {
+	color: var(--main-color) !important;
+}
+
+.nav>.nav-list>li a:hover {
+	color: var(--main-color)
+}
+
+.nav>#nav-check {
+	display: none;
+}
+
+header {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	padding: 20px 0px;
+	background-color: #000;
+	border-bottom: 1px solid #fff;
+}
+
+.nav-title a {
+	text-decoration: none;
+	color: var(--main-color);
+}
+
+.nav-title a img {
+	max-width: 120px;
+}
+
+#banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--font-color);
+}
+
+.sub_banner img {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+}
+
+.sub_banner {
+	position: relative;
+}
+
+.sub_banner_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: var(--font-color);
+	margin-top: 70px;
+	width: 100%;
+}
+
+.sub_banner::before {
+	position: absolute;
+	content: '';
+	background: #000000a8;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+
+a.logo img {
+    max-width: 150px;
+}
+
+h3 {
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+}
+
+.nav-title a svg {
+	width: 250px;
+}
+
+.why_choose_card {
+	text-align: center;
+	border: 1px solid;
+}
+
+.luxhotel_card {
+	margin-bottom: 30px;
+	transition: all 0.5s;
+	text-align: center;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.luxhotel_card:hover img {
+	filter: grayscale();
+}
+
+.luxury_hotels_inner {
+    border: 1px solid #22bddd;
+}
+
+
+/****cookies*****/
+.cookie-alert {
+	align-items: baseline;
+	background: #fff;
+	color: var(--main-color);
+	left: auto;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	bottom: 0px;
+	display: none;
+}
+
+.cookie-alert.show {
+	display: block;
+	transform: translateY(0%);
+	transition-delay: 1000ms;
+}
+
+.cookie-alert .card-body {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 2rem 3rem;
+}
+
+.cookie-content {
+	width: 85%;
+	padding-right: 10px;
+}
+
+.accept-btn {
+	width: 15%;
+}
+
+.accept-cookies {
+	display: block;
+	text-align: center;
+}
+
+.cookie-content p {
+	margin: 0;
+	padding-right: 10px;
+}
+
+.footer_left ul {
+	display: flex;
+	padding: 0;
+	list-style: none;
+	justify-content: end;
+}
+
+.footer_left ul li {
+	margin: 0px 7px;
+}
+
+.footer_left ul li a {
+	color: var(--main-color);
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+
+.footer_right ul {
+	display: flex;
+    padding-top: 10px;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.footer_right ul li {
+	margin-right: 25px;
+}
+
+.footer_right ul li a {
+	font-size: 20px;
+	color: var(--main-color);
+}
+
+footer {
+	background-color: #000;
+}
+
+.footer_right h2 {
+	color: var(--main-color);
+}
+
+.footer_left .logo {
+	text-decoration: none;
+	font-size: 20px;
+	color: var(--main-color);
+}
+
+footer .footer_left ul li a {
+	transition: all 0.5s;
+}
+
+footer .footer_left ul li a:hover {
+	color: #fff;
+}
+
+footer .footer_rightul li a {
+	transition: all 0.5s;
+}
+
+footer .footer_right ul li a:hover {
+	color: #fff;
+}
+
+.lower_footer {
+	background: #000;
+	border-top: 1px solid #fff;
+}
+
+.lower_footer p {
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.footer_right {
+	margin-top: 30px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.why_choose_card img {
+	max-width: 70px;
+	filter: invert(1);
+}
+
+.why_choose_card h3 {
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+
+.why_choose_card p {
+	color: #fff;
+}
+
+.why_choose_card {
+	color: #fff;
+	text-align: center;
+	border: unset;
+	height: 100%;
+	padding: 25px 15px;
+	border: 1px solid rgb(255 255 255 / 75%);
+	border-radius: 5px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.why_choose_card:hover h3 {
+	color: var(--main-color);
+}
+
+.why_choose {
+	background-position: center;
+	background-image: url(../images/iceland_bg3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.why_choose::before {
+	top: 0;
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: #000000c4;
+	z-index: -1;
+}
+
+.luxhotel_card img {
+	width: 100%;
+	min-height: 490px;
+	object-fit: cover;
+	transition: all 0.5s;
+}
+
+.bottom_text_section {
+	background-color: var(--bg-light);
+}
+
+
+
+.luxhotel_card_further img {
+	min-height: 450px;
+	object-fit: cover;
+}
+
+.content_card {
+	padding: 20px 10px;
+}
+
+.before_banner_section {
+	background-color: var(--bg-light);
+}
+
+.why_choose_resort p {
+	color: #000;
+}
+
+.why_choose_resort h3 {
+	color: #000;
+}
+
+.why_choose_resort img {
+	filter: unset;
+}
+
+.content_card ul {
+	text-align: start;
+	display: flex;
+    justify-content: space-between;
+}
+
+input.form-control.sub_btn {
+	width: 200px;
+	padding: 10px;
+	background-color: var(--main-color);
+	color: var(--font-color);
+	border: 1px solid transparent;
+	transition: all 0.5s;
+}
+
+input.form-control.sub_btn:hover {
+	font-weight: 500;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid var(--main-color);
+}
+
+.form-control {
+	padding: 10px;
+	border: 1px solid #00000024;
+	border-radius: unset;
+}
+
+
+
+.footer_left a img {
+    max-width: 150px;
+}
+
+.after_banner_section.section {
+    background: whitesmoke;
+}
+.luxury_hotels_inner img{
+transition: all 0.5s;
+}
+.luxury_hotels_inner img:hover{
+	filter: grayscale(1);
+	}
+
+	.right_side_first {
+		background: whitesmoke;
+		padding: 40px;
+		border-radius: 5px;
+	}
+	.contact_us.section {
+		border-top: 1px solid #21bddd61;
+	}
