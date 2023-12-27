@@ -53,7 +53,7 @@
 		display: inline-block;
 		position: absolute;
 		right: 15px;
-		top: 25px;
+		top: 10px;
 		padding-top: 0.2rem;
 		z-index: 2;
 	}
@@ -67,11 +67,11 @@
 	}
 
 	.nav>.nav-btn>label>span {
-		display: block;
-		width: 25px;
-		height: 10px;
-		border-top: 2px solid #21bddd;
-		filter: invert(1);
+	display: block;
+    width: 30px;
+    height: 10px;
+    border-top: 2px solid #e9b947;
+    filter: invert(1);
 	}
 
 	.nav>.nav-list {
@@ -129,10 +129,10 @@
 @media (max-width: 767px) {
 
 	a.logo img {
-		max-width: 110px;
+		max-width: 160px;
 	}
 	.footer_left a img {
-		max-width: 130px;
+		max-width: 160px;
 	}
 
 	.nav-title a svg {
@@ -171,5 +171,8 @@
 		justify-content: center;
 		margin-top: 20px;
 	}
-
+	.luxury_hotels_inner img{
+		padding: 10px;
+		}
+		
 }
