@@ -6,16 +6,16 @@ body,
 }
 
 :root {
-	--main-color: #21bddd;
+	--main-color: #E9B947;
 	--bg-light: whitesmoke;
-	--font-color: #fff;
+	--font-color: #222222;
 }
 
 html,
 body {
 	overflow-x: hidden !important;
 	width: 100% !important;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Source Sans 3', sans-serif;
 }
 
 h1,
@@ -24,26 +24,57 @@ h3,
 h4,
 h5 {
 	font-weight: 600;
-	font-family: 'Palanquin Dark', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 h1 {
 	font-size: 45px;
+	color: #fff;
+	text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+	position: relative;
+}
+h1::after{
+	position: absolute;
+	content: '';
+	background-color: var(--main-color);
+	width: 200px;
+	height: 2px;
+	border-radius: 5px;
+	bottom: -5px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 600;
 	color: var(--main-color);
+	position: relative;
 }
+h2::after{
+	position: absolute;
+	content: '';
+	background-color: var(--main-color);
+	width: 130px;
+	height: 1px;
+	border-radius: 5px;
+	bottom: -5px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
 
 h3 {
 	font-size: 26px;
-	font-weight: 800;
 }
 
 p {
-	color: #555555;
+	color:var(--font-color);
+	line-height: 28px;
 }
 
 .page_home_banner  img
@@ -58,7 +89,7 @@ p {
 a.common_btn {
 	text-decoration: none;
 	padding: 8px 24px;
-	color: var(--font-color);
+	color: #fff;
 	background: var(--main-color);
 	border: 1px solid transparent;
 	transition: all 0.5s;
@@ -68,7 +99,7 @@ a.common_btn {
 a.common_btn:hover {
 	border: 1px solid var(--main-color);
 	color: var(--bg-dark);
-	background: var(--font-color);
+	background: transparent;
 }
 
 
@@ -111,13 +142,13 @@ a.common_btn:hover {
 .nav>.nav-list>li a {
 	text-decoration: none;
 	cursor: pointer;
-	font-weight: 500;
 	color: var(--font-color);
 	transition: all 0.5s;
 }
 
 .active {
 	color: var(--main-color) !important;
+	border-bottom: 1px solid;
 }
 
 .nav>.nav-list>li a:hover {
@@ -134,8 +165,7 @@ header {
 	width: 100%;
 	z-index: 999;
 	padding: 20px 0px;
-	background-color: #000;
-	border-bottom: 1px solid #fff;
+	background-color: #fff;
 }
 
 .nav-title a {
@@ -188,7 +218,7 @@ header {
 
 
 a.logo img {
-    max-width: 150px;
+    max-width: 180px;
 }
 
 h3 {
@@ -214,9 +244,6 @@ h3 {
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.luxhotel_card:hover img {
-	filter: grayscale();
-}
 
 .luxury_hotels_inner {
     border: 1px solid #22bddd;
@@ -303,7 +330,7 @@ h3 {
 }
 
 footer {
-	background-color: #000;
+	background-color: #fff;
 }
 
 .footer_right h2 {
@@ -321,7 +348,7 @@ footer .footer_left ul li a {
 }
 
 footer .footer_left ul li a:hover {
-	color: #fff;
+	color: #222;
 }
 
 footer .footer_rightul li a {
@@ -329,19 +356,20 @@ footer .footer_rightul li a {
 }
 
 footer .footer_right ul li a:hover {
-	color: #fff;
+	color: #222;
 }
 
 .lower_footer {
-	background: #000;
-	border-top: 1px solid #fff;
+	background: #fff;
+	border-top: 1px solid var(--font-color);
 }
 
 .lower_footer p {
-	color: #fff;
+	color:var(--font-color);
 	text-transform: capitalize;
 	font-weight: 500;
 	font-size: 14px;
+	
 }
 
 .footer_right {
@@ -359,6 +387,7 @@ footer .footer_right ul li a:hover {
 .why_choose_card h3 {
 	margin-top: 22px;
 	margin-bottom: 22px;
+	font-size: 20px;
 }
 
 .why_choose_card p {
@@ -367,13 +396,14 @@ footer .footer_right ul li a:hover {
 
 .why_choose_card {
 	color: #fff;
-	text-align: center;
+	text-align:start;
 	border: unset;
 	height: 100%;
 	padding: 25px 15px;
-	border: 1px solid rgb(255 255 255 / 75%);
+	border: 1px solid rgb(255 255 255 / 35%);
 	border-radius: 5px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 25px 20px;
 }
 
 .why_choose_card:hover h3 {
@@ -382,7 +412,7 @@ footer .footer_right ul li a:hover {
 
 .why_choose {
 	background-position: center;
-	background-image: url(../images/iceland_bg3.jpg);
+	background-image: url(../images/canada_home_bg.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -401,7 +431,7 @@ footer .footer_right ul li a:hover {
 
 .luxhotel_card img {
 	width: 100%;
-	min-height: 490px;
+	min-height: 350px;
 	object-fit: cover;
 	transition: all 0.5s;
 }
@@ -468,7 +498,8 @@ input.form-control.sub_btn:hover {
 
 
 .footer_left a img {
-    max-width: 150px;
+	max-width: 180px;
+
 }
 
 .after_banner_section.section {
@@ -480,7 +511,6 @@ transition: all 0.5s;
 .luxury_hotels_inner img:hover{
 	filter: grayscale(1);
 	}
-
 	.right_side_first {
 		background: whitesmoke;
 		padding: 40px;
@@ -488,4 +518,11 @@ transition: all 0.5s;
 	}
 	.contact_us.section {
 		border-top: 1px solid #21bddd61;
+	}
+
+	.why_choose.section p {
+		color: #fff;
+	}
+	.why_choose_card ul {
+		padding: 0;
 	}
