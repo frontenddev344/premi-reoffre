@@ -435,6 +435,9 @@ footer .footer_rightul li a {
 	object-fit: cover;
 	transition: all 0.5s;
 }
+.luxhotel_card img:hover{
+	filter: brightness(0.5);
+}
 
 
 .bottom_text_section {
@@ -511,6 +514,9 @@ input.form-control.sub_btn:hover {
 .luxury_hotels_inner img {
 	transition: all 0.5s;
 	padding: 40px;
+}
+.luxury_hotels_inner img:hover{
+	filter: brightness(0.5);
 }
 
 .why_choose.section p {
