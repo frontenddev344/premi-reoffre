@@ -31,11 +31,12 @@ h1 {
 	font-size: 45px;
 	color: #fff;
 	text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 1px;
+	color: #fff;
+	letter-spacing: 1px;
 	position: relative;
 }
-h1::after{
+
+h1::after {
 	position: absolute;
 	content: '';
 	background-color: var(--main-color);
@@ -54,7 +55,8 @@ h2 {
 	color: var(--main-color);
 	position: relative;
 }
-h2::after{
+
+h2::after {
 	position: absolute;
 	content: '';
 	background-color: var(--main-color);
@@ -73,13 +75,12 @@ h3 {
 }
 
 p {
-	color:var(--font-color);
+	color: var(--font-color);
 	line-height: 28px;
 }
 
-.page_home_banner  img
-{
-	height: 700px!important;
+.page_home_banner img {
+	height: 700px !important;
 }
 
 .section {
@@ -218,7 +219,7 @@ header {
 
 
 a.logo img {
-    max-width: 180px;
+	max-width: 180px;
 }
 
 h3 {
@@ -242,10 +243,11 @@ h3 {
 	transition: all 0.5s;
 	text-align: center;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	overflow: hidden;
 }
 
 .luxury_hotels_inner {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 
@@ -315,9 +317,9 @@ h3 {
 
 .footer_right ul {
 	display: flex;
-    padding-top: 10px;
-    list-style: none;
-    margin-bottom: 0;
+	padding-top: 10px;
+	list-style: none;
+	margin-bottom: 0;
 }
 
 .footer_right ul li {
@@ -355,9 +357,7 @@ footer .footer_rightul li a {
 	transition: all 0.5s;
 }
 
-footer .footer_right ul li a:hover {
-	color: #222;
-}
+
 
 .lower_footer {
 	background: #fff;
@@ -365,11 +365,11 @@ footer .footer_right ul li a:hover {
 }
 
 .lower_footer p {
-	color:var(--font-color);
+	color: var(--font-color);
 	text-transform: capitalize;
 	font-weight: 500;
 	font-size: 14px;
-	
+
 }
 
 .footer_right {
@@ -396,7 +396,7 @@ footer .footer_right ul li a:hover {
 
 .why_choose_card {
 	color: #fff;
-	text-align:start;
+	text-align: start;
 	border: unset;
 	height: 100%;
 	padding: 25px 15px;
@@ -436,6 +436,7 @@ footer .footer_right ul li a:hover {
 	transition: all 0.5s;
 }
 
+
 .bottom_text_section {
 	background-color: var(--bg-light);
 }
@@ -471,7 +472,7 @@ footer .footer_right ul li a:hover {
 .content_card ul {
 	text-align: start;
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 input.form-control.sub_btn {
@@ -504,27 +505,54 @@ input.form-control.sub_btn:hover {
 }
 
 .after_banner_section.section {
-    background: whitesmoke;
-}
-.luxury_hotels_inner img{
-transition: all 0.5s;
-padding: 40px;
+	background: whitesmoke;
 }
 
-	.why_choose.section p {
-		color: #fff;
-	}
-	.why_choose_card ul {
-		padding: 0;
-	}
+.luxury_hotels_inner img {
+	transition: all 0.5s;
+	padding: 40px;
+}
 
-	.about_us h2::after {
-		margin: unset;
-	}
-	.about_us a {
-		background: yellow;
-		color: #222222;
-	}
-	.contact_us.section {
-		background: whitesmoke;
-	}
+.why_choose.section p {
+	color: #fff;
+}
+
+.why_choose_card ul {
+	padding: 0;
+}
+
+.about_us h2::after {
+	margin: unset;
+}
+
+.about_us a {
+	background: yellow;
+	color: #222222;
+}
+
+.contact_us.section {
+	background: whitesmoke;
+}
+.footer_right ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 35px;
+    height: 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	color: #fff;
+}
+.footer_right ul li:first-child a{
+    background: linear-gradient(30deg,#f38334,#da2e7d 50%,#6b54c6);
+}
+.footer_right ul li:nth-child(2) a{
+    background-color: #1877f2;
+}
+.footer_right ul li:nth-child(3) a{
+    background-color: #b00;
+}
+.footer_right ul li:nth-child(4) a{
+background-color: #1d9df0;
+}
